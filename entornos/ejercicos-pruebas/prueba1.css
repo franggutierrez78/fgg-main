@@ -1,0 +1,42 @@
+body{
+ 
+}
+.tarjeta{
+    background-color: lightcyan;
+    border: 2px solid navy;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.caja{
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid black;
+    background-color: aquamarine;
+    width: 45%;
+    vertical-align: top;
+    padding: 10px;
+}
+.cabecera, .principal, .pie {
+border: 2px solid #333;
+padding: 10px;
+margin: 1px;
+}
+.principal, .pie{
+    height: 100px;
+}
+.cabecera {
+background: #cce5ff;
+text-align: center;
+}
+.principal {
+background: #e6ffe6;
+float: left;
+width: 67%;
+}
+.pie {
+background: #ffe6e6;
+float: right;
+width: 30%;
+}
