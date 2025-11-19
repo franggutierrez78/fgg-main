@@ -12,15 +12,48 @@
     <link rel="icon" sizes="64x64" href="./assets/icon/thumbnail.png">
     <style>
         table{
-            width: 500px;
-            height: 600px;
+            width: 800px;
+            height: 800px;
             border-collapse: collapse;
         }
+        .rojo{background-color: rgba(255, 106, 0, 0.223);}
+        .amarillo{background-color: rgba(255, 255, 0, 0.279);}
+        .azul{background-color: rgba(9, 136, 255, 0.261);}
+        .verde{background-color: rgba(0, 255, 0, 0.104);}
     </style>
 </head>
 <body>
     <table border="1">
-        <tr>ddddd</tr>
+        <tr>
+            <td class="amarillo">1</td>
+            <td class="rojo" colspan="2">2</td>
+            <td class="amarillo">3</td>
+            <td class="azul" rowspan="5">4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td class="azul">6</td>
+            <td class="rojo" colspan="2">7</td>
+        </tr>
+        <tr>
+            <td class="rojo" colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td class="verde">10</td>
+            <td class="azul">11</td>
+            <td>12</td>
+            <td class="rojo">13</td>
+        </tr>
+        <tr>
+            <td class="azul">14</td>
+            <td class="verde" colspan="2" rowspan="2">15</td>
+            <td>16</td> 
+        </tr>
+        <tr>
+            <td class="azul">17</td>
+            <td class="amarillo" colspan="2">18</td>
+        </tr>
     </table>
         
 </html>
