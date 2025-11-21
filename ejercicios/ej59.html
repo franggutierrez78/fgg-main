@@ -12,17 +12,24 @@
     <link rel="icon" sizes="64x64" href="./assets/icon/thumbnail.png">
     <style>
         table{
-            width: 400px;
+            width: 500px;
             height: 200px;
             text-align:center;
-            vertical-align:text-top;
+            vertical-align: top;
+            border-collapse: separate;
+            border: 2px solid blue;
+            border-spacing: 2px 2px;
+
+        }
+        .t1{ writing-mode:vertical-lr;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
       <table border="1">
         <tr>
-            <td rowspan="4">EJEMPLO</td>
+            <td class="t1" rowspan="4">EJEMPLO</td>
         </tr>
         <tr>
             <td colspan="9">PRACTICA DE TABLAS</td>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plantilla</title>
+    <meta name="descripcion" content="esto es una prueba de secciones">
+    <meta name=" keywords" content="html, lenguaje de marcas, codigo html, etiqueta">
+    <meta name="author" content="Fran">
+    <meta name="applicatoin-name" content="practica.html">
+    <meta name="generator" content="VSCode">
+    <link rel="icon" sizes="64x64" href="./assets/icon/thumbnail.png">
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    
+    <form action="./prubas" method="post"> 
+        
+        <label for="nombre">Nombre</label><br>
+        <input type="text" name="nombre">
+        <br><br>
+
+        <label for="apellido">Apellido</label><br>
+        <input type="text" name="apellido">
+        <br><br>
+
+        <label for="contrasena">Contraseña</label><br>
+        <input type="password" name="contrasena">
+        <br><br>
+
+        <label for="dni">DNI</label><br>
+        <input type="text" name="dni">
+        <br><br>
+
+        <p>Sexo:</p> 
+        
+        <input type="radio" name="sexo" value="Masculino" checked>
+        <label for="sexo-m">Hombre</label>
+        <br>
+        
+        <input type="radio" name="sexo" value="Femenino">
+        <label for="sexo-f">Mujer</label>
+        <br><br>
+
+        <label for="foto">Incluir mi foto</label> 
+        <input type="file" name="foto">
+        <br><br>
+
+        <input type="checkbox" name="suscribcion">
+        <label for="suscribcion">Suscribirme al boletín de novedades</label>
+        <br><br>
+
+        <input type="submit" value="Guardar cambios"> 
+        <input type="reset" value="Borrar los datos introducidos">
+
+    </form>
+</body>
+</html>
