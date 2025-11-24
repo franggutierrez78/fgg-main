@@ -19,6 +19,7 @@ body {
   background-color: #181818;
   padding: 10px 2px;
   justify-content: space-between;
+  position: relative;
 }
 
 .logo {
@@ -55,7 +56,7 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 34px;
+  top: 100%;
   background: #181818;
   padding: 100px;
   border-radius: 8px;
@@ -65,9 +66,8 @@ body {
 
 .dropdown-menu li {
   padding: 5px 10px;
-  cursor: pointer;
-  transition: anui¡imation 0.3s ease;     
-}cffd
+  cursor: pointer;   
+}
 
 .dropdown-menu li:hover {
   background-color: #555;
