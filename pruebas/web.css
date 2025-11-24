@@ -57,11 +57,16 @@ body {
   display: none;
   position: absolute;
   top: 100%;
+  left: 0;
+  width: 100vw;
   background: #181818;
-  padding: 100px;
+  padding: 10px;
   border-radius: 8px;
   min-width: 120px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropdown-menu li {
