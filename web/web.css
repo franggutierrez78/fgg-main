@@ -8,9 +8,9 @@ body {
   background-attachment: fixed; /* Mantiene el fondo fijo al desplazarse */
   background-repeat: no-repeat;
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font
-  background: #E6D8C5;
-  background: linear-gradient(0deg, rgba(230, 216, 197, 0.63) 0%,rgba(247, 241, 233, 1) 100%);
+  background-image: url(./assets/foto1.png);
+  background-size: cover; 
+  background-attachment: fixed;
   color: white;
 }
 
@@ -28,7 +28,6 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-weight: bold;
   font-size: 1.2rem;
 }
   
@@ -63,12 +62,13 @@ body {
   left: 0;
   background: #181818;
   padding: 60px 50px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.4);
   justify-content: space-around;
   align-items: flex-start; 
   vertical-align: middle;
-  transition: width .75s ease;
+  transition: max-width 0.4s ease-in-out, opacity 0.4s ease-in-out;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .dropdown-menu ul {
@@ -92,7 +92,108 @@ body {
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
-
 .btn:hover {
   background-color: #7d3c98;
+}
+.btn2{
+  background-color: #1353f7;
+  padding: 10px 20px;
+  border-radius: 18px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn2:hover {
+  background-color: #3970fb;
+}
+
+
+
+.seccion-1 {
+  width: 100%;
+  height: 600px;
+}
+.contenido-seccion-1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: #000000 2px 2px 4px;
+  font-size: 1.2rem;
+
+}
+.seccion-2 {
+  width: 100%;
+  height: 700px;
+  background-image: url(./assets/fondo.png);
+  margin-bottom: 5px;
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size:cover;
+}
+.contenido-seccion-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: #000000 2px 2px 4px;
+  font-size: 1.2rem;
+}
+.columna {
+  display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos salten a la siguiente línea */
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.tarjeta {
+  width: 47%;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  padding: 20px;
+  background-color: rgb(195, 2, 2);
+  margin: 5px;
+  color: black;
+  text-align: center;
+  justify-content: space-between;
+}
+.nike {
+  background-image: url(./assets/nike.jpg);
+  background-position: center;
+  background-size: cover;
+  background-size: 0.5;
+  background-repeat: no-repeat;
+}
+.adidas {
+  background-image: url(./assets/adidas.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.new-balance {
+  background-image: url(./assets/new-balance.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.puma {
+  background-image: url(./assets/puma.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.barra {
+  width: 100%;
+  height: 30px;
+  background-image: url(./assets/foto1.png);
+  background-size: cover; 
+  background-attachment: fixed;
+
 }
