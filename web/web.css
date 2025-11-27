@@ -376,7 +376,6 @@ img {
     min-height: 800px;
     background: #000;
 }
-
 .columna-texto {
     width: 50%;
     padding: 80px 100px;
@@ -385,14 +384,40 @@ img {
     flex-direction: column;
     gap: 20px;
 }
-
+.columna-texto h2 {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffffc9;
+    font-weight: bold;
+}
 .columna-imagen {
     width: 50%;
     height: 100%;
+    margin-top: 100px;
+    margin-right: 100px;
 }
-
 .columna-imagen img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+.cierre {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 20px;
+}
+.cierre img {
+    display: block; 
+    width: 50px; 
+    height: auto;
+}
+
+.cierre p {
+    font-size: 1rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
