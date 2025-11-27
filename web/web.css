@@ -17,16 +17,33 @@ h1 {
   text-shadow: #636363 1px 2px 2px;
 }
 p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+hr {
+  color: #1353f7;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+footer{
+  color: #707070;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
+}
+img {
+  max-width: 50px;
+  height: auto;
 }
 
 .barra-navegacion {
   display: flex;
   align-items: center;
   background-color: #181818;
-  padding: 10px 2px;
+  padding: 16px 2px;
   justify-content: center;
   gap: 40px;
   position: relative;
@@ -141,8 +158,6 @@ p {
   
 }
 
-
-
 .seccion-1 {
   width: 100%;
   height: 600px;
@@ -186,16 +201,16 @@ p {
     flex-wrap: wrap; /* Permite que los elementos salten a la siguiente línea */
     justify-content: center;
     margin-bottom: 0px;
-  background-color: #636363;
+  background-color: #ffffff;
 }
 
 .tarjeta {
   width: 45%;
   height: 500px;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   padding: 20px;
-  background-color: rgb(195, 2, 2);
+  background-color: rgb(255, 0, 0);
   margin: 5px;
   color: black;
   text-align: center;
@@ -229,23 +244,98 @@ p {
 }
 .seccion-3 {
   width: 100%;
-  height: 100%;
 }
 .contenido-seccion-3 {
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:flex-start;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+.cuadro-sobre-nosotros {
+    width: 30%; 
+    max-width: 400px;
+    background: linear-gradient(160deg, #707070, #000000, #000000);
+    border-radius: 8px;
+    margin: 0 50px;
+    padding: 30px 60px; /* Aumentado a 30px arriba/abajo y 60px a los lados */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.cuadro-sobre-nosotros img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px;
+}
+.informacion {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 12px;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  gap: 10px;
+  letter-spacing: -0.12px;
+  padding: 0px 0px;
+  vertical-align: top;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+/* PAGINA SOBRE NOSOTROS */
+.contendo-nosotros {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: #000000 2px 2px 4px;
+  font-size: 1.2rem;
+  background-color: #000000;
+}
+.titulo{
+  margin-top: 20px;
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.titulo-nosotros {
+  font-size: 15rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.descripcion{
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin: 30px 400px;
+  font-style: italic;
+  margin: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.historia {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content:center;
-  align-items: center;
-  flex-direction: row;
-  text-shadow: #000000 2px 2px 4px;
-  font-size: 1.2rem;
+  align-items: center;  
   background-color: #ffffff;
-}
-.foto {
-  width: 40%;
-  height: 100%;
-  background-color: #000000;
-  margin: 30px;
-  border-radius: 15px;
+  
 }
