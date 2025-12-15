@@ -6,7 +6,7 @@
     <title>Pagina de navidad</title>
     <style>
         body {
-            background-color: black;
+            background-color: rgb(255, 255, 255);
             min-height: 100vh;
             margin: 0;
             padding: 0;
@@ -17,7 +17,7 @@
             align-items: center;
             background-color: #f5f5f5;
             padding: 16px 2px;
-            justify-content: space-between;
+            justify-content: center;
             gap: 40px;
             position: relative;
             padding: 15px;
@@ -26,7 +26,7 @@
             list-style: none;
             display: flex;  
             gap: 20px;
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
             align-items: center;
             font-size: 12px;
@@ -89,24 +89,80 @@
         }   
         .contenido-seccion-2 {
             width: 80%;
-            height: 600px;
+            height: auto;
             background-color: burlywood;
             display: flex;
             flex-direction: column;
             justify-content:space-between;
             align-items: center;
             margin: 0 auto;
+            margin-bottom: 30px;
         }
-        .productos-navidad {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 10px;
+        .contenido-seccion-2 .button{
+            border: #000000 solid 2px;
+            border-radius: 5px;
+            padding: 5px 30px;
+            
+        }
+        .columna {
+            width: 80%;
+            grid-column: 1 / span 4;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: inherit;
+            margin-bottom: 10px;
         }
         .producto{
-            width: 300px;
-            height: 400px;
-            background-color: rgb(255, 0, 0);
+            box-sizing: border-box; 
+            height: 150px; 
+            padding: 10px; 
+            background-color: #ff0000;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contenido-seccion-3 {
+            width: 80%;
+            height: auto;
+            background-color: rgb(135, 138, 222);
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .botones{
+            display: flex;
+        }
+        .enlace{
+            background-color: #f90000;
+            width: auto;
+            border-radius: 1000px;
+            padding: 20px;
+            margin: 5px;
+        }
+        .enlace.instagram{
+            background-image: url(./assets/122278-logo-instagram-download-hq.png);
+            background-size: cover;
+            background-color: #f5f5f5;
+        }
+        .enlace.facebook{
+            background-image: url(./assets/sm_5b321c969857d.jpg);
+            background-size: cover;
+            background-color: #f5f5f5;
+        }
+        .horarios{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 10px;
+            background: #f5f5f58d;
+            width: 50%;
+            margin-bottom: 10px;
         }
 
     </style>
@@ -144,16 +200,37 @@
         <section class="seccion">
             <div class="contenido-seccion-2">
                 <h2>¡Productos de Navidad!</h2>
-                <div class="productos-navidad">
-                    <div class="producto">
-                        <h3>producto 1</h3>
-                        <h3>producto 2</h3>
-                        <h3>producto 3</h3>
-                        <h3>producto 4</h3>
-                        <h3>producto 5</h3>
-
-                    </div>
-
+                <div class="columna">
+                    <div class="producto n1"></div>
+                    <div class="producto n2"></div>
+                    <div class="producto n3"></div>
+                    <div class="producto n4"></div>
+                    <div class="producto n5"></div>
+                    <div class="producto n6"></div>
+                    <div class="producto n7"></div>
+                    <div class="producto n8"></div>
+                    <div class="producto n9"></div>
+                    <div class="producto n10"></div>
+                    <div class="producto n11"></div>
+                    <div class="producto n12"></div>
+                </div>
+                <div class="button">Cargar más</div>
+            </div>
+        </section>
+        <section class="secccion">
+            <div class="contenido-seccion-3">
+                <img src="./assets/pngtree-christmas-tree-silhouette-with-stars-on-black-background-clipart-png-image_13363086.png" alt="">
+                <h2>Tu tienda de Navidad</h2>
+                <div class="botones">
+                    <button class="enlace facebook"></button>
+                    <button class="enlace instagram"></button>
+                </div>
+                <div class="horarios">
+                    <h3>Horario de 10h a 14h y 16.30h a 20.30h de lunes a sábado, domingos.</h3>
+                    <img src="" alt="">
+                    <p>Jerez de la Frontera</p>
+                    <p>Albor Jerez</p>
+                </div>
             </div>
         </section>
     </main>
