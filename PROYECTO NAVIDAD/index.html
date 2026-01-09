@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--https://www.navidecor.com/-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de navidad</title>
@@ -164,6 +165,79 @@
             width: 50%;
             margin-bottom: 10px;
         }
+        .contenido-seccion-4 {
+            width: 80%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .contenido-seccion-4 p{
+            font-size: 50px;
+        }
+        table{
+            width: 100%;
+            border: #000000 solid 2px;
+            border-collapse: collapse;
+        }
+        table tr td{
+            padding: 20px 60px;
+            border: #000000 solid 2px;
+        }   
+        .contenido-seccion-4 input{
+            border: none;
+        }
+        .bt{
+            background-color: #000000;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            display: flex;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        footer {
+            width: 100%;
+            height: auto;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            color: white;
+            margin: 0 auto;
+        }
+        footer h2{
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+        footer input{
+            padding: 10px 40px;
+            border: none;
+            margin: 5px;
+        }   
+        footer .bt{
+            background-color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            display: flex;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
 
     </style>
 </head>
@@ -233,6 +307,40 @@
                 </div>
             </div>
         </section>
+        <section class="seccion">
+            <div class="contenido-seccion-4">
+                <p>Contáctanos</p>
+                <form action="">
+                    <table>
+                        <tr>
+                            <td><input type="text" placeholder="Nombre"></td>
+                            <td><input type="text" placeholder="Apellido"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" placeholder="Email"></td>
+                            <td><input type="tel" placeholder="Teléfono"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="2"><input type="text" placeholder="Escribe tu mensaje aquí..."></td>
+                        </tr>
+                    </table>
+                    <button class="bt">Enviar</button>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <h2>Suscribete</h2>
+        <form action="">
+            <table>
+            <tr><td><input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Email"></td></tr>
+            </table>
+        <p>El envio de campañas de marketing requiere su consentimiento</p>
+       <input type="checkbox"> He leido y acepto los terminos de usos y la politica de privacidad</button>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate enim corrupti molestiae adipisci obcaecati et totam iusto officiis tempore! Natus, in illo magni est inventore eos maiores culpa molestiae officia.</p>
+       <button class="bt">Enviar</button>
+        </form>
+    </footer>
 </body>
 </html>
