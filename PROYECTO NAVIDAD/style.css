@@ -361,9 +361,9 @@ footer .bt{
     .integrantes {
         width: 20%;
         height: 400px;
-        border-radius: 5px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-
+        border: 3px solid #ffcc00;
+        border-radius: 10px;
         background-color: rgb(255, 0, 0);
         margin: 50px;
         color: black;
