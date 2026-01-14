@@ -1,0 +1,100 @@
+/* PAGINA EQUIPO */
+    .team-section {
+        padding: 60px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más festiva */
+        background-color: #ffffff; /* Verde oscuro navideño de fondo */
+        color: #000000; /* Texto principal blanco */
+    }
+
+    .intro-text {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .intro-text h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        color: #ffcc00; /* Color oro para el título principal */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px; 
+    }
+
+    .team-member {
+        background-color: #b30000;
+        border: 3px solid #ffcc00;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: left;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .team-member:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    }
+
+    .team-member img {
+        width: 100%;
+        height: 250px;
+        display: block;
+    }
+
+    .member-info {
+        padding: 30px;
+    }
+
+    .member-info h3 {
+        margin: 0 0 5px 0;
+        font-size: 1.4rem;
+        color: #ffffff; /* Texto blanco para el título */
+    }
+
+    .member-info p {
+        margin: 0;
+        color: #e0e0e0; /* Texto blanco grisáceo para la descripción */
+        font-size: 1rem;
+    }   
+    /*atencion cliente*/
+    .ordenes-pedidos {
+        padding: 51px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más festiva */
+        background-color: #ffffff; /* Verde oscuro navideño de fondo */
+        color: #000000; /* Texto principal blanco */
+    }   
+
+    .pedidos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px; /* Más espacio entre los miembros */
+    }
+
+    .pedidos-contenido {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .pedidos-contenido img {
+        width: 150px;
+        height: auto;
+        display: block;
+        
+    }
+   
+    a{
+        text-decoration: none;
+    }

@@ -1,0 +1,25 @@
+/* PAGINA NUESTA HISTORIA */
+    .nosotros {
+        display: flex;
+        width: 100%;
+        background: #000;
+    }
+    
+    .columna-texto {
+        width: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #c300ff;
+    }
+
+    .columna-imagen {
+        width: 50%;
+        height: 1200px;
+        background-color: #00fff7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
