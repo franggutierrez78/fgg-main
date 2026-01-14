@@ -351,6 +351,7 @@ footer .bt{
         justify-content: center;
         background-color: #ffffff;
     }
+    
     .contenido-nosotros h2{
         text-align: center;
         font-size: 50px;
@@ -369,6 +370,12 @@ footer .bt{
         color: black;
         text-align: center;
     
+    }
+
+    .integrantes:hover{
+        transform: translateY(-4px) translateX(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        transition: 0.3s;
     }
 
 /* PAGINA NUESTA HISTORIA */
