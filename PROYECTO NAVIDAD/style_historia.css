@@ -1,25 +1,51 @@
-/* PAGINA NUESTA HISTORIA */
-    .nosotros {
-        display: flex;
-        width: 100%;
-        background: #000;
-    }
-    
-    .columna-texto {
-        width: 50%;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #c300ff;
-    }
+/* PAGINA NUESTRA HISTORIA - ESTILO REFINADO */
+.nosotros {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: #121212;
+}
 
-    .columna-imagen {
-        width: 50%;
-        height: 1200px;
-        background-color: #00fff7;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.columna-texto {
+    width: 50%;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Mejor lectura alineado a la izquierda */
+    flex-direction: column;
+    background-color: #1a472a; /* Verde Navidad Elegante */
+    padding: 80px; /* Espaciado generoso para modernidad */
+}
+
+.columna-texto h2 {
+    color: #d4af37; /* Dorado metálico */
+    font-family: 'Playfair Display', serif; /* Si usas Google Fonts, esta queda ideal */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.columna-texto p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.columna-imagen {
+    width: 50%;
+    height: auto;
+    min-height: 1200px;
+    background-color: #fdfcfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Ajuste móvil */
+@media (max-width: 768px) {
+    .nosotros { flex-direction: column; }
+    .columna-texto, .columna-imagen { width: 100%; min-height: 500px; padding: 40px; }
+}
