@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+
+    <!-- Barra de navegación -->
+    
     <nav class="barra-navegacion">
         <div class="logo">
             <a href="../index.html"><img class="icon" src="../assets/logo navidad.jpg" alt="Logo"></a>
@@ -21,7 +24,7 @@
                     <div class="lista-column">
                         <h3>Arbol</h3>
                         <ul>
-                            <li>Arbol de Navidad</li>
+                            <a href="../productos/arboles.html"><b><li>Arbol de Navidad</li></b></a>
                             <li>Arbol Grande</li>
                             <li>Arbol Pequeño</li>
                             <li>Arbol Blanco</li>
@@ -30,7 +33,7 @@
                     <div class="lista-column">
                         <h3>Luces</h3>
                         <ul>
-                            <li>Guirnaldas Led</li>
+                            <a href="../productos/luces.html"><b><li>Guirnaldas Led</li></b></a>
                             <li>Luces Calidas</li>
                             <li>Cortina de luces</li>
                             <li>Figura Reno Led</li>
@@ -39,7 +42,7 @@
                     <div class="lista-column">
                         <h3>Belenes</h3>
                         <ul>
-                            <li>Belen Clasico</li>
+                            <a href="../productos/belenes.html"><b><li>Belen Clasico</li></b></a>
                             <li>Figuras Color Crema y Dorado</li>
                             <li>Nacimiento Belen Navidad</li>
                             <li>Set 3 Reyes Magos</li>
@@ -49,7 +52,7 @@
                     <div class="lista-column">
                         <h3>Accesorios</h3>
                         <ul>
-                            <li>Juego 49 Bolas de Navidad</li>
+                            <a href="../productos/accesorios.html"><b><li>Juego 49 Bolas de Navidad</li></b></a>
                             <li>Conjunto Bolas Rojas Navidad</li>
                             <li>Conjunto Mini Adornos Navidad</li>
                             <li>Mini Santa Claus Navidad</li>
@@ -116,74 +119,82 @@
 
         <button class="btn">Comprar ahora</button>
     </nav>
+
     <!-- Contenido principal de la página de productos -->
-    <div class="contenido1">
-    <div class="product-header">
-        <div>Equipo / ACCESORIOS DE NAVIDAD</div>
-        <div>
-            <a href="#">&lt; Previo</a> | 
-            <a href="#">Próximo &gt;</a>
-        </div>
-    </div>
+    
+    <main>
+        <div class="contenido1">
+            <div class="product-header">
+                <div>Equipo / ACCESORIOS DE NAVIDAD</div>
+                <div>
+                    <a href="#">&lt; Previo</a> | 
+                    <a href="#">Próximo &gt;</a>
+                </div>
+            </div>
 
-    <div class="product-detail">
-        <div class="product-image-section">
-            <!-- Imagen principal  -->
-            <img src="../assets/productos/juego_bolas.webp" alt="juego 49 accesorios" class="main-image">
-        </div>
-        <div class="product-info-section">
-            <h1>JUEGO 49 ACCESORIOS DE NAVIDAD </h1>
-            <div class="sku">SKU: NVD2026</div>
-            <div class="price">99,99 €</div>
-            <div class="quantity-control">
-                <label for="cantidad">Cantidad</label>
-                <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="50" style="width: 60px; padding: 5px;">
+            <div class="product-detail">
+                <div class="product-image-section">
+                    <!-- Imagen principal  -->
+                    <img src="../assets/productos/juego_bolas.webp" alt="juego 49 accesorios" class="main-image">
+                </div>
+                <!-- Información del producto -->
+                <div class="product-info-section">
+                    <h1>JUEGO 49 ACCESORIOS DE NAVIDAD </h1>
+                    <div class="sku">SKU: NVD2026</div>
+                    <div class="price">99,99 €</div>
+                    <div class="quantity-control">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="50" style="width: 60px; padding: 5px;">
+                    </div>
+                    <button class="add-to-cart btn1">Agregar al carrito</button>
+                </div>
             </div>
-            <button class="add-to-cart btn1">Agregar al carrito</button>
+            <!-- Características del producto -->
+            <div class="product-features">
+                <h3>Características:</h3>
+                <ul>
+                    <li>Cantidad: Set de 49 unidades</li>
+                    <li>Color: Paleta clásica (Rosa, morado y verdes) con acabados mixtos</li>
+                    <li>Acabado: Texturas mate, brillante y con purpurina (glitter)</li>
+                    <li>Material: Plástico irrompible de alta calidad (Seguro para niños y mascotas)</li>
+                    <li>Diseño: Incluye ganchos de fijación y estuche de almacenamiento</li>
+                </ul>
+            </div>
+            <!-- Más opciones de productos -->
+            <div class="more-options">
+                <h2>Más opciones</h2>
+                <div class="more-options-grid">
+                    <!-- Opción 1 -->
+                    <div class="option-card">
+                        <img src="../assets/productos/bolas rojas.webp" alt="Bolas rojas">
+                        <p>Conjunto de Bolas Rojas Navidad 30 Piezas</p>
+                        <strong>49,99 €</strong>
+                    </div>
+                    <!-- Opción 2 -->
+                    <div class="option-card">
+                        <img src="../assets/productos/mini_adornos.webp" alt="Mini adornos">
+                        <p>Conjunto de Mini Adornos Navidad 24 Piezas</p>
+                        <strong>29,99 €</strong>   
+                    </div>
+                    <!-- Opción 3 -->
+                    <div class="option-card">
+                        <img src="../assets/productos/mini santa.webp" alt="Mini santa">
+                        <p>Mini Santa Navidad</p>
+                        <strong>9,99 €</strong>
+                    </div>
+                    <!-- Opción 4 -->
+                    <div class="option-card">
+                        <img src="../assets/productos/bolas blancas.webp" alt="Bolas blancas">
+                        <p>Conjunto de Bolas Blancas Navidad 30 Piezas</p>
+                        <strong>49,99 €</strong>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+</body>
 
-    <div class="product-features">
-        <h3>Características:</h3>
-        <ul>
-            <li>Cantidad: Set de 49 unidades</li>
-            <li>Color: Paleta clásica (Rosa, morado y verdes) con acabados mixtos</li>
-            <li>Acabado: Texturas mate, brillante y con purpurina (glitter)</li>
-            <li>Material: Plástico irrompible de alta calidad (Seguro para niños y mascotas)</li>
-            <li>Diseño: Incluye ganchos de fijación y estuche de almacenamiento</li>
-        </ul>
-    </div>
-
-    <div class="more-options">
-        <h2>Más opciones</h2>
-        <div class="more-options-grid">
-            <!-- Opción 1 -->
-            <div class="option-card">
-                <img src="../assets/productos/bolas rojas.webp" alt="Bolas rojas">
-                <p>Conjunto de Bolas Rojas Navidad 30 Piezas</p>
-                <strong>49,99 €</strong>
-            </div>
-            <!-- Opción 2 -->
-            <div class="option-card">
-                <img src="../assets/productos/mini_adornos.webp" alt="Mini adornos">
-                <p>Conjunto de Mini Adornos Navidad 24 Piezas</p>
-                <strong>29,99 €</strong>   
-            </div>
-            <!-- Opción 3 -->
-            <div class="option-card">
-                <img src="../assets/productos/mini santa.webp" alt="Mini santa">
-                <p>Mini Santa Navidad</p>
-                <strong>9,99 €</strong>
-            </div>
-            <!-- Opción 4 -->
-            <div class="option-card">
-                <img src="../assets/productos/bolas blancas.webp" alt="Bolas blancas">
-                <p>Conjunto de Bolas Blancas Navidad 30 Piezas</p>
-                <strong>49,99 €</strong>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- Footer -->
 
 <footer>
     <p>&copy; 2026 Proyecto Navidad. Albor reserva todos los derechos.</p>

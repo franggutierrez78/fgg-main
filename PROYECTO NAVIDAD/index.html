@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <!--https://www.navidecor.com/   https://navidadshop.com/   -->
+    <!-- paginas de referencia -->
+    <!-- los enlaces de la barra de navegación disponibles son los que están en el marcados los demas son posibles enlaces para ampliaciones de la pagina en un futuro -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de navidad</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+<!-- Barra de navegación -->
+
     <nav class="barra-navegacion">
         <div class="logo">
             <a href="./index.html"><img class="icon" src="./assets/logo navidad.jpg" alt="Logo"></a>
@@ -20,7 +26,7 @@
                     <div class="lista-column">
                         <h3>Arbol</h3>
                         <ul>
-                            <li>Arbol de Navidad</li>
+                            <a href="./productos/arboles.html"><b><li>Arbol de Navidad</li></b></a>
                             <li>Arbol Grande</li>
                             <li>Arbol Pequeño</li>
                             <li>Arbol Blanco</li>
@@ -29,7 +35,7 @@
                     <div class="lista-column">
                         <h3>Luces</h3>
                         <ul>
-                            <li>Guirnaldas Led</li>
+                            <a href="./productos/luces.html"><b><li>Guirnaldas Led</li></b></a>
                             <li>Luces Calidas</li>
                             <li>Cortina de luces</li>
                             <li>Figura Reno Led</li>
@@ -38,7 +44,7 @@
                     <div class="lista-column">
                         <h3>Belenes</h3>
                         <ul>
-                            <li>Belen Clasico</li>
+                            <a href="./productos/belenes.html"><b><li>Belen Clasico</li></b></a>
                             <li>Figuras Color Crema y Dorado</li>
                             <li>Nacimiento Belen Navidad</li>
                             <li>Set 3 Reyes Magos</li>
@@ -48,7 +54,7 @@
                     <div class="lista-column">
                         <h3>Accesorios</h3>
                         <ul>
-                            <li>Juego 49 Bolas de Navidad</li>
+                            <a href="./productos/accesorios.html"><b><li>Juego 49 Bolas de Navidad</li></b></a>
                             <li>Conjunto Bolas Rojas Navidad</li>
                             <li>Conjunto Mini Adornos Navidad</li>
                             <li>Mini Santa Claus Navidad</li>
@@ -64,15 +70,15 @@
                     <div class="lista-column">
                         <h3>Empresa</h3>
                         <ul>
-                            <a href="./quienes_somos.html"><li>Quiénes somos</li></a>
-                            <a href="./nuestra_historia.html"><li>Nuestra historia</li></a>
+                            <a href="./quienes_somos.html"><b><li>Quiénes somos</li></b></a>
+                            <a href="./nuestra_historia.html"><b><li>Nuestra historia</li></b></a>
                         </ul>
                     </div>
                     <div class="lista-column">
                         <h3>Cultura</h3>
                         <ul>
                             <li>Nuestros valores</li>
-                            <a href="./equipo.html"><li>Equipo</li></a>
+                            <a href="./equipo.html"><b><li>Equipo</li></b></a>
                         </ul>
                     </div>
                     <div class="lista-column">
@@ -115,12 +121,17 @@
 
         <button class="btn">Comprar ahora</button>
     </nav>
+
+<!-- Contenido principal -->
+
     <main>
+<!-- Frase principal-->
         <section class="seccion">
-        <div class="contenido-seccion-1">
-            <h1>TU NAVIDAD A TU Estilo</h1>
-        </div>
+            <div class="contenido-seccion-1">
+                <h1>TU NAVIDAD A TU Estilo</h1>
+            </div>
         </section>
+<!--Carta decorativa-->
         <section class="contenido-seccion-2">
             <div class="capa-decorativa">
                 <img src="./assets/duende-navideño.png" alt="Duende" class="duende-asomado">
@@ -139,22 +150,36 @@
                 </div>
             </div>
         </section>
-        <section class="secccion">
+<!-- Informacion tienda -->
+        <section class="seccion">
             <div class="contenido-seccion-3">
-                <img src="./assets/pngtree-christmas-tree-silhouette-with-stars-on-black-background-clipart-png-image_13363086.png" alt="">
-                <h2>Tu tienda de Navidad</h2>
-                <div class="botones">
-                    <button class="enlace facebook"></button>
-                    <button class="enlace instagram"></button>
-                </div>
+                <img class="arbol-logo" src="./assets/pngtree-christmas-tree-silhouette-with-stars-on-black-background-clipart-png-image_13363086.png" alt="Árbol">
+                
+                <h2>Tu Tienda de Navidad en Jerez</h2>
+                
+                <div class="divisor-dorado"></div>
+
                 <div class="horarios">
-                    <h3>Horario de 10h a 14h y 16.30h a 20.30h de lunes a sábado, domingos.</h3>
-                    <img src="" alt="">
-                    <p>Jerez de la Frontera</p>
-                    <p>Albor Jerez</p>
+                    <h3>NUESTRO HORARIO</h3>
+                    <p class="horas">Lunes a Sábado: 10h - 14h | 16:30h - 20:30h</p>
+                    <p class="domingos">Domingos: Consultar festivos</p>
+                    
+                    <div class="ubicacion">
+                        <span class="pin-icono">📍</span>
+                        <p>Albor Jerez - Jerez de la Frontera</p>
+                    </div>
+                </div>
+
+                <div class="redes-sociales">
+                    <p>Sigue la magia:</p>
+                    <div class="botones">
+                        <a href="#" class="enlace facebook" title="Facebook"></a>
+                        <a href="#" class="enlace instagram" title="Instagram"></a>
+                    </div>
                 </div>
             </div>
         </section>
+<!-- Formulario de contacto -->
         <section class="seccion">
             <div class="contenido-seccion-4">
                 <p>Contáctanos</p>
@@ -177,6 +202,8 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <h2>Suscribete</h2>
         <form action="">
@@ -190,6 +217,5 @@
             <button class="bt">Enviar</button>
         </form>
     </footer>
-
 </body>
 </html>
