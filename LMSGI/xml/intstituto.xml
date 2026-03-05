@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instituto>
+    <alumnos>
+        <alumno id = "alumno1">
+            <nombre>Pablo</nombre>
+            <apellido>García</apellido>
+            <edad>20</edad>
+        </alumno>
+        <alumno id = "alumno2">
+            <nombre>Lucia</nombre>
+            <apellido>Fernández</apellido>
+            <edad>19</edad>
+        </alumno>
+    </alumnos>
+    <asignaturas>
+        <asignatura id = "asig1">
+            <nombre>Programación</nombre>
+        </asignatura>
+        <asignatura id = "asig2">
+            <nombre>Base de Datos</nombre>
+        </asignatura>
+        <asignatura id = "asig3">
+            <nombre>Lenguaje de Maras</nombre>
+        </asignatura>
+    </asignaturas>
+    <matriculas>
+        <matricula alumnoref = "alumno1">
+            <asignatura ref = "asig1"/>
+            <asignatura ref = "asig2"/>
+        </matricula>
+        <matricula alumnoref = "alumno2">
+            <asignatura ref = "asig1"/>
+            <asignatura ref = "asig3"/>
+        </matricula>
+    </matriculas>
+</instituto>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+    <productos>
+        <producto id = "prod1">
+            <nombre>Teclado</nombre>
+            <precio>25</precio>
+        </producto>
+        <producto id = "prod2">
+            <nombre>raton</nombre>
+            <precio>15</precio>
+        </producto>
+        <producto id = "prod3">
+            <nombre>monitor</nombre>
+            <precio>199</precio>
+        </producto>
+    </productos>
+    <pedido id = "1001">
+        <cliente>
+            <cliente>Javier Lopez</cliente>
+            <fecha>2024-11-01</fecha>
+            <articulos>
+                <item ref="prod1" cantidad="2"/>
+                <item ref="prod2" cantidad="1"/>
+            </articulos>
+            <total>65.00</total>
+        </cliente>
+    </pedido>
+    <pedido id = "1002">
+        <cliente>
+            <cliente>María García</cliente>
+            <fecha>2024-11-02</fecha>
+            <articulos>
+                <item ref="prod3" cantidad="1"/>
+            </articulos>
+            <total>199.00</total>
+        </cliente>
+    </pedido>
+</pedidos>

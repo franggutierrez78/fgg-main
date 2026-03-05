@@ -1,0 +1,37 @@
+!DOCTYPE alumnos [
+<?xml version="1.0" encoding="UTF-8"?>
+<red_social>
+    <usuarios>
+        <usuario id = "U1">
+            <nombre>David</nombre>
+        </usuario>
+        <usuario id = "U2">
+            <nombre>Andrea</nombre>
+        </usuario>
+        <usuario id = "U3">
+            <nombre>Miguel</nombre>
+        </usuario>
+    </usuarios>
+    <publicaciones>
+        <publicacion id = "P1">
+            <contenido>¡Hola mundo!</contenido>
+            <autor ref="U1"/>
+        </publicacion>
+        <publicacion id = "P2">
+            <contenido>Aprendiendo XML</contenido>
+            <autor ref="U2"/>
+        </publicacion>
+    </publicaciones>
+    <comentarios>
+        <comentario id = "C1">
+            <contenido>Buen Post</contenido>
+            <autor ref="U3"/>
+            <publicacion ref="P1"/>
+        </comentario>
+        <comentario id = "C2">
+            <contenido>Yo también</contenido>
+            <autor ref="U1"/>
+            <publicacion ref="P2"/>
+        </comentario>
+    </comentarios>
+</red_social>

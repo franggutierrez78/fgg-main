@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gestionHotel>
+    <hoteles>
+        <hotel id = "H1">
+            <nombre>Hotel Sol</nombre>
+            <ciudad>Madrid</ciudad>
+        </hotel>
+        <hotel id = "H2">
+            <nombre>Hotel Playa</nombre>
+            <ciudad>Valencia</ciudad>
+        </hotel>
+    </hoteles>
+    <habitaciones>
+        <habitacion id = "101">
+            <espacio>individual</espacio>
+            <precio>80€</precio>
+            <hotel ref="H1"/>
+        </habitacion>
+        <habitacion id = "102">
+            <espacio>doble</espacio>
+            <precio>120€</precio>
+            <hotel ref="H1"/>
+        </habitacion>
+        <habitacion id = "201">
+            <espacio>suite</espacio>
+            <precio>200€</precio>
+            <hotel ref="H2"/>
+        </habitacion>
+    </habitaciones>
+    <clientes>
+        <cliente id = "C1">
+            <nombre>Roberto Diaz</nombre>
+        </cliente>
+        <cliente id = "C2">
+            <nombre>Sara Molina</nombre>
+        </cliente>
+    </clientes>
+    <reservas>
+        <reserva id = "R1">
+            <cliente ref="C1"/>
+            <fecha_inicio>2024-12-01</fecha_inicio>
+            <fecha_fin>2024-12-05</fecha_fin>
+            <habitacion ref="101"/>
+        </reserva>
+        <reserva id = "R2">
+            <cliente ref="C2"/>
+            <fecha_inicio>2024-12-10</fecha_inicio>
+            <fecha_fin>2024-12-12</fecha_fin>
+            <habitacion ref="210"/>
+        </reserva>
+    </reservas>
+</gestionHotel>

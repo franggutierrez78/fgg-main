@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liga_futbol>
+    <equipos>
+        <equipo id = "E1">
+            <nombre>Real Madrid</nombre>
+        </equipo>
+        <equipo id = "E2">
+            <nombre>Barcelona</nombre>
+        </equipo>
+    </equipos>
+    <jugadores>
+        <jugador id = "J1">
+            <nombre>Vinicius</nombre>
+            <equipo ref = "E1"/>
+        </jugador>
+        <jugador id = "J2">
+            <nombre>lewandowski</nombre>
+            <equipo ref = "E2"/>
+        </jugador>
+    </jugadores>
+    <partidos>
+        <partido id = "P1">
+            <local ref = "E1"/>
+            <visitante ref = "E2"/>
+            <resultado>2-1</resultado>
+        </partido>
+    </partidos>
+    <goles>
+        <gol id = "1">
+            <jugador ref = "J1"/>
+            <minuto>15</minuto>
+            <partido ref = "P1"/>
+        </gol>
+        <gol id = "2">
+            <jugador ref = "J2"/>
+            <minuto>45</minuto>
+            <partido ref = "P1"/>
+        </gol>
+        <gol id = "3">
+            <jugador ref = "J1"/>
+            <minuto>70</minuto>
+            <partido ref = "P1"/>
+        </gol>
+    </goles>
+</liga_futbol>
