@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<academia>
+    <profesores>
+        <profesor id = "P1">
+            <nombre>Antonio Ruiz</nombre>
+        </profesor>
+        <profesor id = "P2">
+            <nombre>José Luis</nombre>
+        </profesor>
+    </profesores>
+    <asignaturas>
+        <asignatura id = "A1">
+            <nombre>Programación</nombre>
+            <profesor ref = "P1"/>
+        </asignatura>
+        <asignatura id = "A2">
+            <nombre>Base de Datos</nombre>
+            <profesor ref = "P2"/>
+        </asignatura>
+    </asignaturas>
+    <cursos>
+        <curso id = "C1">
+            <nombre>1 DAW</nombre>
+        </curso>
+        <curso id = "C2">
+            <nombre>2 DAW</nombre>
+        </curso>
+    </cursos>
+    <alumnos>
+        <alumno id = "A1">
+            <nombre>Daniel</nombre>
+            <curso ref = "C1"/>
+        </alumno>
+        <alumno id = "A2">
+            <nombre>Carlos</nombre>
+            <curso ref = "C2"/>
+        </alumno>
+    </alumnos>
+    <notas>
+        <alumno ref = "A1">
+            <asignatura ref = "A1">
+                <nota>8</nota>
+            </asignatura>
+            <asignatura ref = "A2">
+                <nota>7</nota>
+            </asignatura>
+        </alumno>
+        <alumno ref = "A2">
+            <asignatura ref = "A1">
+                <nota>9</nota>
+            </asignatura>
+        </alumno>
+    </notas>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comparativa_moviles>
+    <marcas>
+        <marca nombre = "Samsung">
+            <modelo id = "S23">
+                <nombre>Galaxy S23</nombre>
+                <RAM unidad = "GB">8</RAM>
+                <espacio unidad = "GB">256</espacio>
+                <precio unidad = "Euros">959</precio>
+            </modelo>
+            <modelo id = "A54">
+                <nombre>Galaxy A54</nombre>
+                <RAM unidad = "GB">6</RAM>
+                <espacio unidad = "GB">128</espacio>
+                <precio unidad = "Euros">449</precio>
+            </modelo>
+        </marca>
+        <marca nombre = "Apple">
+            <modelo id = "A15">
+                <nombre>iPhone 15</nombre>
+                <RAM unidad = "GB">6</RAM>
+                <espacio unidad = "GB">128</espacio>
+                <precio unidad = "Euros">959</precio>
+            </modelo>
+            <modelo id = "A14">
+                <nombre>iPhone 15 Pro</nombre>
+                <RAM unidad = "GB">8</RAM>
+                <espacio unidad = "GB">256</espacio>
+                <precio unidad = "Euros">1219</precio>
+            </modelo>
+        </marca>
+    </marcas>

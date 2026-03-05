@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mal_xml>
+    <datos>
+    <alumno>Pablo</alumno>
+    <edad>20</edad>
+    <asignatura>Programación</asignatura>
+    <asignatura>Bases de Datos</asignatura>
+    <alumno>Lucía</alumno>
+    <edad>19</edad>
+    <asignatura>Programación</asignatura>
+    </datos>
+</mal_xml>
+//Corregido
+<mal_xml>
+    <alumnos>
+        <alumno id = "alumno1">
+            <nombre>Pablo</nombre>
+            <edad>20</edad>
+        </alumno>
+        <alumno id = "alumno2">
+            <nombre>Lucía</nombre>
+            <edad>19</edad>
+        </alumno>
+    </alumnos>
+    <asignaturas>
+        <asignatura id = "asig1">
+            <nombre>Programación</nombre>
+        </asignatura>
+        <asignatura id = "asig2">
+            <nombre>Base de Datos</nombre>
+        </asignatura>
+    </asignaturas>
+    <datos>
+        <alumno ref = "alumno1">
+            <asignatura ref = "asig1"/>
+            <asignatura ref = "asig2"/>
+        </alumno>
+        <alumno ref = "alumno2">
+            <asignatura ref = "asig1"/>
+        </alumno>
+    </datos>
+</mal_xml>

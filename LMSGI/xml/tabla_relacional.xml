@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabla_relacional>
+    <tabla_clientes>
+        <cliente id = "1">
+            <nombre>Carlos</nombre>
+            <ciudad>Madrid</ciudad>
+        </cliente>
+        <cliente id = "2">
+            <nombre>Lucia</nombre>
+            <ciudad>Sevilla</ciudad>
+        </cliente>
+    </tabla_clientes>
+    <tabla_facturas>
+        <factura id = "100">
+            <fecha>2024-10-01</fecha>
+            <cliente ref = "1"/>
+        </factura>
+        <factura id = "101">
+            <fecha>2024-10-02</fecha>
+            <cliente ref = "2"/>
+        </factura>
+    </tabla_facturas>
+    <tabla_Lineas_Factura>
+        <linea id = "1">
+            <factura ref = "100"/>
+            <producto cantidad = "1">Teclado</producto>
+            <precio>25</precio>
+        </linea>
+        <linea id = "2">
+            <factura ref = "100"/>
+            <producto cantidad = "2">Raton</producto>
+            <precio>15</precio>
+        </linea>
+        <linea id = "3">
+            <factura ref = "101"/>
+            <producto cantidad = "1">Monitor</producto>
+            <precio>199</precio>
+        </linea>
+    </tabla_Lineas_Factura>
+</tabla_relacional>
