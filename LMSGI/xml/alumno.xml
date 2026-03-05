@@ -1,0 +1,10 @@
+!DOCTYPE alumnos [
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno>
+    <nombre>Carlos</nombre>
+    <apellido>Pérez Gomez</apellido>
+    <edad>20</edad>
+    <curso>1º DAW</curso>
+    <email>carlos.perez@email.com</email>
+    <telefono>666123123</telefono>
+</alumno>
