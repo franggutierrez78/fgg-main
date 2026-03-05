@@ -1,0 +1,23 @@
+!DOCTYPE alumnos [
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+    <juego codigo = "001">
+        <titulo>Elden Ring</titulo>
+        <año>2022</año>
+        <genero>RPG</genero>
+        <precio>59.99€</precio>
+    </juego>
+    <juego codigo = "002">
+        <titulo>FIFA 24</titulo>
+        <año>2023</año>
+        <genero>Deportes</genero>
+        <precio>69.99€</precio>
+    </juego>
+    <juego codigo = "003">
+        <titulo>Minecraft</titulo>
+        <año>2011</año>
+        <genero>Sandbox</genero>
+        <precio>26.95€</precio>
+    </juego>
+</catalogo>
+

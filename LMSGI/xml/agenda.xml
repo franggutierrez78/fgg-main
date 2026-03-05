@@ -1,0 +1,34 @@
+!DOCTYPE alumnos [
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+    <contacto id = "1">
+        <nombre>Laura</nombre>
+        <apellido>Martin Ruiz</apellido>
+        <telefono>666123123</telefono>
+        <email>laura@email.com</email>
+        <direccion>
+            <cuidad>Madrid</ciudad>
+            <codigoPostal>28001</codigoPostal>
+        </direccion>
+    </contacto>
+    <contacto id = "2">
+        <nombre>Sergio</nombre>
+        <apellido>López Díaz</apellido>
+        <telefono>612333444</telefono>
+        <email>sergio@email.com</email>
+        <direccion>
+            <ciudad>Barcelona</ciudad>
+            <codigoPostal>08001</codigoPostal>
+        </direccion>
+    </contacto>
+    <contacto id = "3">
+        <nombre>Marta</nombre>
+        <apellido>Sánchez Gil</apellido>
+        <telefono>699888777</telefono>
+        <email>marta@email.com</email>
+        <direccion>
+            <cuidad>Cádiz</cuidad>
+            <codigoPostal>01001</codigoPostal>
+        </direccion>
+    </contacto>
+</agenda>

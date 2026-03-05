@@ -1,0 +1,25 @@
+!DOCTYPE alumnos [
+<?xml version="1.0" encoding="UTF-8"?>
+<horario>
+    <dia nombre = "Lunes">
+        <clase id = "1">
+            <asignatura>Programación</asignatura>
+            <hora>8:15 - 9:15</hora>
+        </clase>
+        <clase id = "2">
+            <asignatura>Base de Datos</asignatura>
+            <hora>9:15 - 10:15</hora>
+        </clase>
+    </dia>
+    <dia nombre = "Martes">
+        <clase id = "1">
+            <asignatura>Lenguaje de Maras</asignatura>
+            <hora>8:15 - 9:15</hora>
+        </clase>
+        <clase id = "2">
+            <asignatura>Sistemas Informaticos</asignatura>
+            <hora>9:15 - 10:15</hora>
+        </clase>
+    </dia>
+</horario>
+        

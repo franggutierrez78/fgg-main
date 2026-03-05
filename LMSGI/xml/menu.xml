@@ -1,0 +1,40 @@
+!DOCTYPE alumnos [
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <categoria nombre="entrantes">
+        <plato disponible = "true">
+            <nombre>Ensalada César</nombre>
+            <precio>8.50€</precio>
+            <descripcion>Lechuga romana, croutons, pollo crujiente y salsa César casera.</descripcion>
+        </plato>
+        <plato disponible = "true">
+            <nombre>Croquetas</nombre>
+            <precio>7.00€</precio>
+            <descripcion>Croquetas caseras de jamón ibérico, crujientes por fuera y cremosas por dentro.</descripcion>
+        </plato>
+    </categoria>
+    <categoria nombre="platos-principales">
+        <plato disponible = "true">
+            <nombre>Entrecot</nombre>
+            <precio>18.50€</precio>
+            <descripcion>300g de ternera a la brasa con guarnición de patatas y pimientos.</descripcion>
+        </plato>
+        <plato disponible = "true">
+            <nombre>Salmon al horno</nombre>
+            <precio>16.00€</precio>
+            <descripcion>Filete de salmón fresco al horno con salsa de limón y eneldo, acompañado de verduras al vapor.</descripcion>
+        </plato>
+    </categoria>
+    <categoria nombre="postres">
+        <plato disponible = "true">
+            <nombre>Tarta de queso</nombre>
+            <precio>5.50€</precio>
+            <descripcion>Deliciosa tarta de queso con base de galleta y cobertura de mermelada de fresa.</descripcion>
+        </plato>
+        <plato disponible = "true">
+            <nombre>Flan</nombre>
+            <precio>4.00€</precio>
+            <descripcion>Flan casero de huevo con caramelo líquido, suave y cremoso.</descripcion>
+        </plato>
+    </categoria>
+</menu>

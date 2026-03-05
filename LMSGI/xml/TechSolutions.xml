@@ -1,0 +1,29 @@
+!DOCTYPE alumnos [
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa = "Tech Solutions">
+    <departamento name = "Desarollo">
+        <empleado id = "1">
+            <nombre>Ana</nombre>
+            <apellido>Torres</apellido>
+            <puesto>Programadora</puesto>
+            <salario>28000€</salario>
+            <fechaContratacion>2022-03-15</fechaContratacion>
+        </empleado>
+        <empleado id = "2">
+            <nombre>Luis</nombre>
+            <apellido>Romero</apellido>
+            <puesto>Backend</puesto>
+            <salario>30000€</salario>
+            <fechaContratacion>2021-06-01</fechaContratacion>
+        </empleado>
+    </departamento>
+    <departamento name = "Marketing">
+        <empleado id = "3">
+            <nombre>Elena</nombre>
+            <apellido>Ruiz</apellido>
+            <puesto>Comunity Manager</puesto>
+            <salario>24000€</salario>
+            <fechaContratacion>2023-01-10</fechaContratacion>
+        </empleado>
+    </departamento>
+</empresa>
