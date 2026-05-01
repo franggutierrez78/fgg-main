@@ -45,20 +45,12 @@ img {
   padding: 16px 2px;
   justify-content: center;
   gap: 40px;
-  position: relative;
+  position: relative; /* Padre posicionado */
+  z-index: 1000;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 1.2rem;
-}
-  
-.icon {
-  max-width: 50px;
-  font-size: 1.5rem;
-}
+.logo { display: flex; align-items: center; gap: 8px; font-size: 1.2rem; }
+.icon { max-width: 40px; filter: invert(1); } /* Filtro para que el icono se vea en blanco */
 
 .menu {
   list-style: none;
@@ -71,40 +63,105 @@ img {
 }
 
 .menu-item {
-  position:static;
+  position: relative; /* CAMBIO: Ahora es relativo para que el hijo sepa dónde ubicarse */
   cursor: pointer;
-}
-
-.menu-item.dropdown:hover .dropdown-menu {
-  display: flex ;
+  padding: 10px 0; /* Área de contacto para que no se cierre el menú */
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  width: 100%;
-  height: 100px;
-  left: 0;
+  top: 100%; /* CAMBIO: Justo debajo del padre para que no haya huecos */
+  left: 50%;
+  transform: translateX(-50%); /* Centrado respecto al texto */
+  width: 180px; /* Ancho más manejable para el diseño actual */
   background: #181818;
-  padding: 60px 50px;
-  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.4);
-  justify-content: space-around;
-  align-items: flex-start; 
-  vertical-align: middle;
-  transition: max-width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-  overflow: hidden;
-  margin-top: 20px;
-}
-
-.dropdown-menu ul {
+  padding: 15px 0;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
   list-style: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;   
+  border-radius: 4px;
 }
 
-.dropdown-menu ul:hover {
-  background-color: #555;
+.dropdown-menu li {
+  padding: 10px 20px;
+  transition: background 0.3s;
+}
+
+.dropdown-menu li:hover { background-color: #333; }
+
+.menu-item.dropdown:hover .dropdown-menu {
+  display: block; /* Cambio a block para control simple */
+}
+
+/* --- BOTONES --- */
+.btn { background-color: #9b59b6; border: none; padding: 10px 20px; border-radius: 8px; color: white; cursor: pointer; font-weight: 600; }
+.btn2 { background-color: #1353f7; padding: 10px 20px; border-radius: 18px; color: white; border: none; cursor: pointer; margin-top: 10px; }
+.btn3 { background-color: #ffffff; padding: 10px 20px; border-radius: 18px; color: #1353f7; border: 1px solid #1353f7; cursor: pointer; margin-top: 10px; }
+
+/* --- GALERÍA Y TARJETAS (Arreglado el bug de los 400px) --- */
+.columna {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+.tarjeta {
+  width: 40%;
+  min-width: 300px;
+  height: 450px;
+  border-radius: 8px;
+  margin: 10px;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Los botones se quedan abajo */
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover { transform: scale(1.02); }
+
+.abajo { margin-top: 10px; } /* Ajuste del margen exagerado */
+
+/* Fondos */
+.nike { background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600'); }
+.adidas { background-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600'); }
+.new-balance { background-image: url('https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=600'); }
+.puma { background-image: url('https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=600'); }
+
+/* --- FORMULARIO (Nuevo Requisito) --- */
+.seccion-contacto {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.formulario {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input, .formulario textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background: #ffffff;
+  color: white;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .barra-navegacion { flex-direction: column; gap: 15px; }
+  .menu { gap: 10px; }
+  .tarjeta { width: 90%; }
 }
 
 .btn {
@@ -421,3 +478,24 @@ img {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+}
+
+.btn-codepen {
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background-color: #1353f7;
+  transition: 0.3s;
+  box-shadow: 0px 5px 15px rgba(19, 83, 247, 0.4);
+  cursor: pointer;
+}
+
+.btn-codepen:hover {
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 0px 8px 25px rgba(19, 83, 247, 0.6);
+  background-color: #4c7dfa;
+}
